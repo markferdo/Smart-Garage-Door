@@ -39,3 +39,6 @@ The stopping event during opening and closing is detected by the second interrup
 
 The system monitors the door and button status, recalibrating if stuck. It toggles the door direction based on button press and uses interrupts for real-time direction and response. 
 
+###
+![Image](https://github.com/user-attachments/assets/719b9521-ea6b-4a63-9827-bc75a2a59f54)
+
