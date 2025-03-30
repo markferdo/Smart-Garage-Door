@@ -31,21 +31,11 @@
 ### 
 💠 If the door gets stuck, it immediately stops and indicates an error. 
 ## How the device works: 
-The software operates in a state machine consisting of two states. Case 1 is responsible for 
-calibration, and Case 2 is responsible for door open/close operations. When the device 
-powers on, it checks the EEPROM states, and based on the EEPROM states, it directs the 
-system to the relevant case. In each case, a stuck detection is performed, and if the door 
-gets stuck it immediately stops and recalibrates the door.
+The software operates in a state machine consisting of two states. Case 1 is responsible for calibration, and Case 2 is responsible for door open/close operations. When the device powers on, it checks the EEPROM states, and based on the EEPROM states, it directs the system to the relevant case. In each case, a stuck detection is performed, and if the door gets stuck, it immediately stops and recalibrates the door.
 
-The stuck detection is implemented using both interrupt and time-checking methods. Each 
-time the encoder detent is detected, a value is added to the queue. The difference between 
-two values of the queue(interrupts) is continuously checked, and if it exceeds the tested 
-time, a stuck condition is detected. 
+The stuck detection is implemented using both interrupt and time-checking methods. Each time the encoder detent is detected, a value is added to the queue. The difference between the two values of the queue(interrupts) is continuously checked, and if it exceeds the tested time, a stuck condition is detected. 
 
-The stopping event during opening and closing is detected by the second interrupt. If a 
-button interrupt is triggered, the button press flag is set to true. The direction is then 
-toggled, and the system runs in the opposite direction if the button is pressed again. 
+The stopping event during opening and closing is detected by the second interrupt. If a button interrupt is triggered, the button press flag is set to true. The direction is then toggled, and the system runs in the opposite direction if the button is pressed again. 
 
-The system monitors the door and button status, recalibrating if stuck. It toggles the door 
-direction based on button press and uses interrupts for real-time direction and response. 
+The system monitors the door and button status, recalibrating if stuck. It toggles the door direction based on button press and uses interrupts for real-time direction and response. 
 
