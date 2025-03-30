@@ -1,6 +1,9 @@
 # Smart-Garage-Door
 ### Smart Garage Door IoT Project.
 ## 💻 Technologies and Tools Used:
+### 
+💠 Raspberry Pi
+###
 💠Limit switches (Configured as an input with pull-up resistor)
 ###
 💠Rotary Encoder (Configured as an input with pull-up resistor)
