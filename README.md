@@ -44,3 +44,9 @@ The system monitors the door and button status, recalibrating if stuck. It toggl
 ![Image](https://github.com/user-attachments/assets/719b9521-ea6b-4a63-9827-bc75a2a59f54)
 ![Image](https://github.com/user-attachments/assets/071edc3e-5278-496d-90f5-a0791349fb6d)
 
+## Demonstration
+Watch the demo video here!
+###
+https://www.linkedin.com/posts/markferdo_iot-embeddedsystems-raspberrypi-activity-7306929983950655488-v2eo?utm_source=share&utm_medium=member_desktop&rcm=ACoAACsg-gEBO2P3dZFz2KSe_CRKzZlLPPhwfDw
+
+
