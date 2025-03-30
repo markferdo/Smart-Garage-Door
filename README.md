@@ -1,9 +1,9 @@
 # Smart-Garage-Door
-### An automated system for calibrating and dispensing pills at specified intervals.
+### Smart Garage Door IoT Project.
 ## 💻 Technologies and Tools Used:
-💠Opto fork sensor (Configured as an input with pull-up resistor)
+💠Limit switches (Configured as an input with pull-up resistor)
 ###
-💠Piezo sensor (Configured as an input with pull-up resistor)
+💠Rotary Encoder (Configured as an input with pull-up resistor)
 ### 
 💠Stepper motor
 ### 
