@@ -30,3 +30,9 @@
 💠 If power is lost during calibration, open/close it indicates an error using LEDs, and then the device needs to recalibrate. 
 ### 
 💠 If the door gets stuck, it immediately stops and indicates an error. 
+## How the device works: 
+The software operates in a state machine consisting of two states. Case 1 is responsible for 
+calibration, and Case 2 is responsible for door open/close operations. When the device 
+powers on, it checks the EEPROM states, and based on the EEPROM states, it directs the 
+system to the relevant case. In each case, a stuck detection is performed, and if the door 
+gets stuck it immediately stops and recalibrates the door.
